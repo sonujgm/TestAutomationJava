@@ -18,23 +18,50 @@ public class registrationPage extends registrationPageFactory{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void userRegistration() {
-		
+	public String userRegistration(String password) {
 		int length = 4; 
         randomString = generateRandomString(length);
-        
         userFirstName.sendKeys(randomString);
         userLastName.sendKeys(randomString);
         address.sendKeys("test address");
         city.sendKeys("kolkata");
         state.sendKeys("West Bengal");
         pincode.sendKeys("7000123");
-		
+        phoneNumber.sendKeys("6314496010");
+        ssn.sendKeys("123469");
+        enterUserCredential(randomString,password);
+        repeatedPassword.sendKeys(password);
+        register.click();
+        
+        return randomString;
 	}
 	
-	public void goTo()
+	public void enterUserCredential(String userNameInput,String passwordInput) {
+		userName.sendKeys(userNameInput);
+		password.sendKeys(passwordInput);
+	}
+	
+	public void enterLoginCredential(String userNameInput,String passwordInput) {
+		loginUserName.sendKeys(userNameInput);
+		loginPassword.sendKeys(passwordInput);
+		loginButton.click();
+	}
+	
+	public String verifyText() {
+		String success = welcomeText.getText();
+		return success;
+	}
+	
+	public boolean verifyLoginDashboard() {
+		boolean result = loginDashboard.isDisplayed();
+		return result;
+	}
+	
+	
+	
+	public void goTo(String URL)
 	{
-		driver.get("https://parabank.parasoft.com/parabank/register.htm");
+		driver.get(URL);
 	}
 	
 	public static String generateRandomString(int length) {
@@ -47,5 +74,7 @@ public class registrationPage extends registrationPageFactory{
         
         return stringBuilder.toString();
     }
+
+	 
 
 }

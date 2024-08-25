@@ -35,7 +35,7 @@ public class Base {
 		driver = new ChromeDriver(options);
 		driver.get("https://parabank.parasoft.com/"); 
 		driver.manage().window().setSize(new Dimension(1440,900));//full screen
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().window().maximize();
 		
 		registrationDetails = new registrationPage(driver);
@@ -47,8 +47,9 @@ public class Base {
 	
 	@AfterMethod(alwaysRun=true)
 	
-	public void tearDown()
+	public void tearDown() throws InterruptedException
 	{
+		//Thread.sleep(10000);
 		driver.quit();
 	}
 

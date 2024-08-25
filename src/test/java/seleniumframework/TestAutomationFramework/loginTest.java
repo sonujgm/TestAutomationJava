@@ -1,5 +1,13 @@
 package seleniumframework.TestAutomationFramework;
 
-public class loginTest {
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import junit.framework.Assert;
+import seleniumframework.TestComponents.Base;
+
+public class loginTest extends Base{
+	
+	
 
 }

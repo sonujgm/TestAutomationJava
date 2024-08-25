@@ -35,5 +35,38 @@ WebDriver driver;
 	@FindBy(id="customer.address.zipCode")
 	WebElement pincode;
 	
+	@FindBy(id="customer.phoneNumber")
+	WebElement phoneNumber;
+	
+	@FindBy(id="customer.username")
+	WebElement userName;
+	
+	@FindBy(id="customer.password")
+	WebElement password;
+	
+	@FindBy(id="customer.ssn")
+	WebElement ssn;
+	
+	
+	@FindBy(id="repeatedPassword")
+	WebElement repeatedPassword;
+	
+	@FindBy(css="input[value=\"Register\"]")
+	WebElement register;
+	
+	@FindBy(css="[id=\"rightPanel\"] p")
+	WebElement welcomeText;
+	
+	@FindBy(css="[name=\"username\"]")
+	WebElement loginUserName;
+	
+	@FindBy(css="[name=\"password\"]")
+	WebElement loginPassword;
+	
+	@FindBy(id="showOverview")
+	WebElement loginDashboard;	
+	
+	@FindBy(css="[value=\"Log In\"]")
+	WebElement loginButton;
 	
 }

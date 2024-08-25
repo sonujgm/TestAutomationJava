@@ -2,15 +2,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel = "tests" name="Suite">
 
-<listeners>
-<listener class-name="rahulshettyacademy.TestComponents.Listeners"/>
-</listeners>
-
 
   <test thread-count="5" name="Submit Order Test" >
-  <parameter name="browser" value="firefox"/>
+  <parameter name="userName" value="testUser2"/>
+  <parameter name="password" value="test1234"/> 
+  
     <classes>
-      <class  name="rahulshettyacademy.tests.SubmitOrderTest" />
+      <class  name="seleniumframework.TestAutomationFramework.userRegistration" />
     </classes>
   </test> <!-- Test -->
   
