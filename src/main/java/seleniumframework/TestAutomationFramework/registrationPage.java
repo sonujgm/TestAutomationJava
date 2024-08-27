@@ -57,8 +57,6 @@ public class registrationPage extends registrationPageFactory{
 		return result;
 	}
 	
-	
-	
 	public void goTo(String URL)
 	{
 		driver.get(URL);
@@ -71,10 +69,7 @@ public class registrationPage extends registrationPageFactory{
             int randomIndex = RANDOM.nextInt(CHARACTERS.length());
             stringBuilder.append(CHARACTERS.charAt(randomIndex));
         }
-        
         return stringBuilder.toString();
     }
-
-	 
-
+ 
 }

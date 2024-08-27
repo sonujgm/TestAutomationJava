@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/3</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 25 23:08:17 IST 2024</td>
+<td>Started on:</td><td>Tue Aug 27 22:48:16 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (77 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (182 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -78,8 +78,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration()'><b>verifyUserRegestration</b><br>Test class: seleniumframework.TestAutomationFramework.userRegistration</td>
 <td><div><pre>org.testng.TestNGException: 
-Parameter &apos;userName&apos; is required by @Test on method verifyUserRegestration but has not been marked @Optional or defined
-in C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1967721849\testng-customsuite.xml
+Parameter &apos;password&apos; is required by @Test on method verifyUserRegestration but has not been marked @Optional or defined
+in C:\Users\DELL\AppData\Local\Temp\testng-eclipse--1433962457\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:267)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
@@ -107,10 +107,10 @@ in C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1967721849\testng-customsuite
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace40075281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace40075281'><pre>org.testng.TestNGException: 
-Parameter &apos;userName&apos; is required by @Test on method verifyUserRegestration but has not been marked @Optional or defined
-in C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1967721849\testng-customsuite.xml
+</pre></div><a href='#' onClick='toggleBox("stack-trace1995619265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1995619265'><pre>org.testng.TestNGException: 
+Parameter &apos;password&apos; is required by @Test on method verifyUserRegestration but has not been marked @Optional or defined
+in C:\Users\DELL\AppData\Local\Temp\testng-eclipse--1433962457\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:267)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
@@ -140,7 +140,232 @@ in C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1967721849\testng-customsuite
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>seleniumframework.TestAutomationFramework.userRegistration@4c371370</td></tr>
+<td>seleniumframework.TestAutomationFramework.userRegistration@5e0e82ae</td></tr>
+<tr>
+<td title='seleniumframework.TestAutomationFramework.openAccount.verifyUserRegestration()'><b>verifyUserRegestration</b><br>Test class: seleniumframework.TestAutomationFramework.openAccount</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;password&apos; is required by @Test on method verifyUserRegestration but has not been marked @Optional or defined
+in C:\Users\DELL\AppData\Local\Temp\testng-eclipse--1433962457\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1148254374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1148254374'><pre>org.testng.TestNGException: 
+Parameter &apos;password&apos; is required by @Test on method verifyUserRegestration but has not been marked @Optional or defined
+in C:\Users\DELL\AppData\Local\Temp\testng-eclipse--1433962457\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>seleniumframework.TestAutomationFramework.openAccount@4135c3b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumframework.TestAutomationFramework.openAccount.verifyNewAccountOpening()'><b>verifyNewAccountOpening</b><br>Test class: seleniumframework.TestAutomationFramework.openAccount</td>
+<td><div><pre>java.lang.Throwable: Method seleniumframework.TestAutomationFramework.openAccount.verifyNewAccountOpening() on instance seleniumframework.TestAutomationFramework.openAccount@4135c3b depends on not successfully finished methods 
+[seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.openAccount@4135c3b
+seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.userRegistration@5e0e82ae]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1016363973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1016363973'><pre>java.lang.Throwable: Method seleniumframework.TestAutomationFramework.openAccount.verifyNewAccountOpening() on instance seleniumframework.TestAutomationFramework.openAccount@4135c3b depends on not successfully finished methods 
+[seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.openAccount@4135c3b
+seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.userRegistration@5e0e82ae]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>seleniumframework.TestAutomationFramework.openAccount@4135c3b</td></tr>
+<tr>
+<td title='seleniumframework.TestAutomationFramework.openAccount.verifyLoginCredential()'><b>verifyLoginCredential</b><br>Test class: seleniumframework.TestAutomationFramework.openAccount</td>
+<td><div><pre>java.lang.Throwable: Method seleniumframework.TestAutomationFramework.userRegistration.verifyLoginCredential() on instance seleniumframework.TestAutomationFramework.openAccount@4135c3b depends on not successfully finished methods 
+[seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.openAccount@4135c3b
+seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.userRegistration@5e0e82ae]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1248234350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1248234350'><pre>java.lang.Throwable: Method seleniumframework.TestAutomationFramework.userRegistration.verifyLoginCredential() on instance seleniumframework.TestAutomationFramework.openAccount@4135c3b depends on not successfully finished methods 
+[seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.openAccount@4135c3b
+seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.userRegistration@5e0e82ae]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>seleniumframework.TestAutomationFramework.openAccount@4135c3b</td></tr>
+<tr>
+<td title='seleniumframework.TestAutomationFramework.userRegistration.verifyLoginCredential()'><b>verifyLoginCredential</b><br>Test class: seleniumframework.TestAutomationFramework.userRegistration</td>
+<td><div><pre>java.lang.Throwable: Method seleniumframework.TestAutomationFramework.userRegistration.verifyLoginCredential() on instance seleniumframework.TestAutomationFramework.userRegistration@5e0e82ae depends on not successfully finished methods 
+[seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.openAccount@4135c3b
+seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.userRegistration@5e0e82ae]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1819776360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1819776360'><pre>java.lang.Throwable: Method seleniumframework.TestAutomationFramework.userRegistration.verifyLoginCredential() on instance seleniumframework.TestAutomationFramework.userRegistration@5e0e82ae depends on not successfully finished methods 
+[seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.openAccount@4135c3b
+seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration() on instance seleniumframework.TestAutomationFramework.userRegistration@5e0e82ae]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>seleniumframework.TestAutomationFramework.userRegistration@5e0e82ae</td></tr>
 </table><p>
 </body>
 </html>

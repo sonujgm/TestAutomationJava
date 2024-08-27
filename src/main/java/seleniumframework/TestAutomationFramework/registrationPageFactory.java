@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class registrationPageFactory {
 
-WebDriver driver;
+	WebDriver driver;
 	
 	public registrationPageFactory(WebDriver driver)
 	{
@@ -22,7 +22,7 @@ WebDriver driver;
 	
 	@FindBy(id="customer.lastName")
 	WebElement userLastName;
-//	
+	
 	@FindBy(id="customer.address.street")
 	WebElement address;
 	

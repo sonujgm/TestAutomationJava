@@ -7,9 +7,19 @@
         <methods>
           <include name="verifyUserRegestration"/>
           <include name="driverSetup"/>
+          <include name="verifyLoginCredential"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- seleniumframework.TestAutomationFramework.userRegistration -->
+      <class name="seleniumframework.TestAutomationFramework.openAccount">
+        <methods>
+          <include name="driverSetup"/>
+          <include name="verifyUserRegestration"/>
+          <include name="verifyNewAccountOpening"/>
+          <include name="verifyLoginCredential"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- seleniumframework.TestAutomationFramework.openAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

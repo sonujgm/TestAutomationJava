@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-25T23:57:48 IST" name="Suite" finished-at="2024-08-25T23:58:06 IST" duration-ms="18277">
+  <suite started-at="2024-08-27T23:55:31 IST" name="Suite" finished-at="2024-08-27T23:55:41 IST" duration-ms="9711">
     <groups>
     </groups>
-    <test started-at="2024-08-25T23:57:48 IST" name="Submit Order Test" finished-at="2024-08-25T23:58:06 IST" duration-ms="18277">
-      <class name="seleniumframework.TestAutomationFramework.userRegistration">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:seleniumframework.TestAutomationFramework.userRegistration@6302bbb1]" started-at="2024-08-25T23:57:48 IST" name="driverSetup" finished-at="2024-08-25T23:57:54 IST" duration-ms="6395" status="PASS">
+    <test started-at="2024-08-27T23:55:31 IST" name="Submit Order Test" finished-at="2024-08-27T23:55:41 IST" duration-ms="9711">
+      <class name="seleniumframework.TestAutomationFramework.openAccount">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:seleniumframework.TestAutomationFramework.openAccount@4562e04d]" started-at="2024-08-27T23:55:31 IST" name="driverSetup" finished-at="2024-08-27T23:55:37 IST" duration-ms="6194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="verifyUserRegestration(java.lang.String)[pri:0, instance:seleniumframework.TestAutomationFramework.userRegistration@6302bbb1]" started-at="2024-08-25T23:57:54 IST" name="verifyUserRegestration" finished-at="2024-08-25T23:57:58 IST" duration-ms="3223" status="PASS">
+        <test-method signature="verifyNewAccountOpening(java.lang.String)[pri:0, instance:seleniumframework.TestAutomationFramework.openAccount@4562e04d]" started-at="2024-08-27T23:55:37 IST" name="verifyNewAccountOpening" finished-at="2024-08-27T23:55:41 IST" duration-ms="3157" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -19,33 +19,46 @@
               </value>
             </param>
           </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<> but was:<Account Opened!>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<> but was:<Account Opened!>
+at junit.framework.Assert.assertEquals(Assert.java:81)
+at junit.framework.Assert.assertEquals(Assert.java:87)
+at seleniumframework.TestAutomationFramework.openAccount.verifyNewAccountOpening(openAccount.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserRegestration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumframework.TestAutomationFramework.userRegistration@6302bbb1]" started-at="2024-08-25T23:57:58 IST" name="tearDown" finished-at="2024-08-25T23:57:58 IST" duration-ms="337" status="PASS">
+        </test-method> <!-- verifyNewAccountOpening -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumframework.TestAutomationFramework.openAccount@4562e04d]" started-at="2024-08-27T23:55:41 IST" name="tearDown" finished-at="2024-08-27T23:55:41 IST" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:seleniumframework.TestAutomationFramework.userRegistration@6302bbb1]" started-at="2024-08-25T23:57:58 IST" name="driverSetup" finished-at="2024-08-25T23:58:03 IST" duration-ms="5144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverSetup -->
-        <test-method signature="verifyLoginCredential(java.lang.String)[pri:0, instance:seleniumframework.TestAutomationFramework.userRegistration@6302bbb1]" started-at="2024-08-25T23:58:03 IST" name="verifyLoginCredential" finished-at="2024-08-25T23:58:06 IST" depends-on-methods="seleniumframework.TestAutomationFramework.userRegistration.verifyUserRegestration" duration-ms="2834" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test1234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginCredential -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumframework.TestAutomationFramework.userRegistration@6302bbb1]" started-at="2024-08-25T23:58:06 IST" name="tearDown" finished-at="2024-08-25T23:58:06 IST" duration-ms="261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- seleniumframework.TestAutomationFramework.userRegistration -->
+      </class> <!-- seleniumframework.TestAutomationFramework.openAccount -->
     </test> <!-- Submit Order Test -->
   </suite> <!-- Suite -->
 </testng-results>

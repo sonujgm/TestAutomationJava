@@ -8,7 +8,8 @@
   <parameter name="password" value="test1234"/> 
   
     <classes>
-      <class  name="seleniumframework.TestAutomationFramework.userRegistration" />
+      <!-- >class  name="seleniumframework.TestAutomationFramework.userRegistration" / -->
+      <class  name="seleniumframework.TestAutomationFramework.openAccount" />
     </classes>
   </test> <!-- Test -->
   

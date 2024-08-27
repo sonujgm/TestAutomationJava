@@ -11,7 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters; 
+import org.testng.annotations.Parameters;
+
+import seleniumframework.TestAutomationFramework.accountOpeningPage;
 import seleniumframework.TestAutomationFramework.registrationPage;
 
 
@@ -20,7 +22,10 @@ public class Base {
 	// git repo: https://github.com/sonujgm/TestAutomationJava/tree/main/src/test/java
 	
 	public registrationPage registrationDetails;
+	public accountOpeningPage accountOpening;
 	public WebDriver driver; 
+	public static String baseUrl = "https://parabank.parasoft.com/parabank/";
+	public static String registrationSuccessMessage = "Your account was created successfully. You are now logged in.";
 	
 	@BeforeMethod(alwaysRun=true) 
 	public void driverSetup ()
@@ -39,18 +44,13 @@ public class Base {
 		driver.manage().window().maximize();
 		
 		registrationDetails = new registrationPage(driver);
+		accountOpening = new accountOpeningPage(driver);
 		
 	}
 	
-	
-	
-	
 	@AfterMethod(alwaysRun=true)
-	
 	public void tearDown() throws InterruptedException
 	{
-		//Thread.sleep(10000);
 		driver.quit();
 	}
-
 }

@@ -5,13 +5,13 @@
     <parameter name="password" value="test1234"/>
     <parameter name="userName" value="testUser2"/>
     <classes>
-      <class name="seleniumframework.TestAutomationFramework.loginTest">
+      <class name="seleniumframework.TestAutomationFramework.openAccount">
         <methods>
           <include name="driverSetup"/>
+          <include name="verifyNewAccountOpening" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="verifyLoginCredential" invocation-numbers="0"/>
         </methods>
-      </class> <!-- seleniumframework.TestAutomationFramework.loginTest -->
+      </class> <!-- seleniumframework.TestAutomationFramework.openAccount -->
     </classes>
   </test> <!-- Submit Order Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
