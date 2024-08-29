@@ -12,7 +12,7 @@ Contributing License Contact Features
 Automated testing of core banking functionalities such as account
 creation, fund transfer, bill payment, and loan requests. Page Object
 Model (POM) design pattern implementation. Test execution using TestNG
-(or JUnit). Test reports generation using Surefire (for TestNG) or
+. Test reports generation using Surefire (for TestNG) or
 Allure (for more detailed reports). Cross-browser testing support.
 Technology Stack Programming Language: Java Automation Framework:
 Selenium WebDriver Testing Framework: TestNG or JUnit Build Tool: Maven
