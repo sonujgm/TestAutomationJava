@@ -27,5 +27,7 @@ public class accountOpeningPageFactory extends commonUI{
 	@FindBy(css="[id=\"openAccountResult\"] h1")
 	WebElement successBanner;
 	
+	@FindBy(id="openAccountResult")
+	WebElement openAccountResult;
 	
 }

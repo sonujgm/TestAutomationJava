@@ -11,7 +11,7 @@ public class userRegistration extends Base{
 	
 	@Parameters({"password"})
 	@Test(alwaysRun=true)
-	public void verifyUserRegestration(String password) {	
+	public void verifyUserRegestrations(String password) {	
 		registrationDetails.goTo(baseUrl+"register.htm");
 		userName = registrationDetails.userRegistration(password);
 		String success = registrationDetails.verifyText();

@@ -47,7 +47,6 @@ public class registrationPageFactory {
 	@FindBy(id="customer.ssn")
 	WebElement ssn;
 	
-	
 	@FindBy(id="repeatedPassword")
 	WebElement repeatedPassword;
 	

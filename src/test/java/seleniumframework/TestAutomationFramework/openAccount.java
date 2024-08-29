@@ -12,10 +12,8 @@ public class openAccount extends Base{
 	
 	@Parameters({"password"})
 	@Test
-	public void verifyNewAccountOpening(String password) throws InterruptedException {
-		registrationDetails.goTo(baseUrl+"register.htm");
-		registrationDetails.userRegistration(password);
-		
+	public void verifyNewAccountOpening(String password){
+		registerUser(password);
 		registrationDetails.goTo(baseUrl+"openaccount.htm");
 		accountOpening.selectAccountType("SAVINGS");
 		accountOpening.selectAccountOpeningAmount();

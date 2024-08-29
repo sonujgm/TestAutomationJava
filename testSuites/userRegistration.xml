@@ -2,14 +2,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel = "tests" name="Suite">
 
-
   <test thread-count="5" name="User registration" >
   <parameter name="userName" value="testUser2"/>
   <parameter name="password" value="test1234"/> 
   
     <classes>
-      <!-- >class  name="seleniumframework.TestAutomationFramework.userRegistration" / -->
-      <class  name="seleniumframework.TestAutomationFramework.openAccount" />
+      <class  name="seleniumframework.TestAutomationFramework.userRegistration" />
     </classes>
   </test> 
   

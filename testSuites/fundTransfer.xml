@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Fund Transfer" parallel = "tests" thread-count="5">
+
+  <test name="Account open - chrome" thread-count="5" >
+  <parameter name="browser" value="chrome"/>
+  <parameter name="userName" value="testUser2"/>
+  <parameter name="password" value="test1234"/> 
+  
+    <classes> 
+      <class  name="seleniumframework.TestAutomationFramework.fundTransfer" />
+    </classes>
+  </test> 
+  
+  <test name="Account open - firefox" thread-count="5" >
+  <parameter name="browser" value="firefox"/>
+  <parameter name="userName" value="testUser2"/>
+  <parameter name="password" value="test1234"/> 
+  
+    <classes> 
+      <class  name="seleniumframework.TestAutomationFramework.fundTransfer" />
+    </classes>
+  </test> 
+  
+  <test name="Account open - edge" thread-count="5" >
+  <parameter name="browser" value="edge"/>
+  <parameter name="userName" value="testUser2"/>
+  <parameter name="password" value="test1234"/> 
+  
+    <classes> 
+      <class  name="seleniumframework.TestAutomationFramework.fundTransfer" />
+    </classes>
+  </test> 
+</suite>
+
+

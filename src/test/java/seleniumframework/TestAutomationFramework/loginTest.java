@@ -12,9 +12,7 @@ public class loginTest extends Base{
 	@Parameters({"password" })
 	@Test()
 	public void verifyLoginCredential(String password) {
-		registrationDetails.goTo(baseUrl+"register.htm");
-		userName = registrationDetails.userRegistration(password);
-		
+		registerUser(password);
 		registrationDetails.goTo(baseUrl+"index.htm?ConnType=JDBC");  
 		registrationDetails.enterLoginCredential(userName,password);
 		boolean status = registrationDetails.verifyLoginDashboard();

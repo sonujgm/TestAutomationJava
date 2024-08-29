@@ -26,6 +26,7 @@ public class accountOpeningPage extends accountOpeningPageFactory{
 	}
 
 	public String verifySuccessMessage() {
+		waitForDisplay(openAccountResult);
 		String message = successBanner.getText();
 		return message;
 	}
