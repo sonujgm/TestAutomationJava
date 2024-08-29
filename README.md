@@ -15,13 +15,7 @@ Model (POM) design pattern implementation. Test execution using TestNG
 . Test reports generation using Surefire (for TestNG) or
 Allure (for more detailed reports). Cross-browser testing support.
 Technology Stack Programming Language: Java Automation Framework:
-Selenium WebDriver Testing Framework: TestNG or JUnit Build Tool: Maven
-Reporting: Surefire Plugin, Allure (optional) Version Control: Git
-Continuous Integration: Jenkins (Optional) Project Structure css Copy
-code ├── src │ ├── main │ │ ├── java │ │ │ └── com │ │ │ └── parabank │
-│ │ └── pages │ │ ├── resources │ └── test │ ├── java │ │ └── com │ │
-└── parabank │ │ └── tests │ ├── resources │ └── testng.xml (or JUnit
-runner) ├── pom.xml └── README.md
+Selenium WebDriver Testing Framework: TestNG Build Tool: Maven
 
 src/main/java: Contains the Page Object classes for different Parabank
 pages. src/test/java: Contains the test classes with TestNG/JUnit test
